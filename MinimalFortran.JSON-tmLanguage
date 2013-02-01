@@ -1,5 +1,5 @@
-{ "name": "SublimeFortran",
-  "scopeName": "source.sublimefortran",
+{ "name": "MinimalFortran",
+  "scopeName": "source.fortran",
     "fileTypes": [
         "f",
         "F",

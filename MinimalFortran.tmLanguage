@@ -22,7 +22,7 @@
 		<string>F08</string>
 	</array>
 	<key>name</key>
-	<string>SublimeFortran</string>
+	<string>MinimalFortran</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -474,7 +474,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.sublimefortran</string>
+	<string>source.fortran</string>
 	<key>uuid</key>
 	<string>8e494bec-c003-4942-9a3a-b73fc1acfca6</string>
 </dict>
