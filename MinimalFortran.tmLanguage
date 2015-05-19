@@ -133,7 +133,7 @@
 			<key>comment</key>
 			<string>statements controling the flow of the program</string>
 			<key>match</key>
-			<string>\b(?i:(go\s*to|assign|to|if|then|else|elseif|elif|select\s*case|case|end\s*select|end\s*if|continue|stop|pause|do|end\s*do|while|cycle))\b</string>
+			<string>\b(?i:(go\s*to|assign|to|if|then|else|elseif|elif|select\s*case|case|end\s*select|end\s*if|continue|stop|pause|do|end\s*do|while|cycle|use|allocate|sin|cos|exp|write|dot_product|maxval|minval|sum|all|any|abs|print))\b</string>
 			<key>name</key>
 			<string>keyword.control.fortran</string>
 		</dict>
@@ -141,7 +141,7 @@
 			<key>comment</key>
 			<string>programming units</string>
 			<key>match</key>
-			<string>\b(?i:(program|end\s+program|entry|block\s+data|call|return|contains|include))\b</string>
+			<string>\b(?i:(program|end\s+program|entry|block\s+data|call|return|contains|include|private|public))\b</string>
 			<key>name</key>
 			<string>keyword.control.programming-units.fortran</string>
 		</dict>
@@ -149,7 +149,7 @@
 			<key>comment</key>
 			<string>operators</string>
 			<key>match</key>
-			<string>((?&lt;!\=)\=(?!\=)|\-|\+|\/\/|\/|(?!^)\*|::)</string>
+			<string>((?&lt;!\=)\=(?!\=)|\%|\-|\+|\/\/|\/|(?!^)\*|::)</string>
 			<key>name</key>
 			<string>keyword.operator.fortran</string>
 		</dict>
@@ -157,7 +157,7 @@
 			<key>comment</key>
 			<string>logical operators</string>
 			<key>match</key>
-			<string>(?i:(\.and\.|\.or\.|\.eq\.|\.lt\.|\.le\.|\.gt\.|\.ge\.|\.ne\.|\.not\.|\.eqv\.|\.neqv\.))</string>
+			<string>(?i:(\.and\.|\.or\.|\.eq\.|\.lt\.|\.le\.|\.gt\.|\.ge\.|\.ne\.|\.not\.|\.eqv\.|\.neqv\.|\=\=|\&gt;|\&lt;))</string>
 			<key>name</key>
 			<string>keyword.operator.logical.fortran</string>
 		</dict>
@@ -181,7 +181,7 @@
 			<key>comment</key>
 			<string>data type attributes</string>
 			<key>match</key>
-			<string>\b(?i:(dimension|common|equivalence|parameter|external|intrinsic|save|data|implicit\s*none|implicit|intent|in|out|inout))\b</string>
+			<string>\b(?i:(allocatable|pointer|dimension|common|equivalence|parameter|external|intrinsic|save|data|implicit\s*none|implicit|intent|in|out|inout))\b</string>
 			<key>name</key>
 			<string>storage.modifier.fortran</string>
 		</dict>
