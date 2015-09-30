@@ -43,7 +43,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?x:\s*([a-zA-Z\(\)]*)(?&lt;!end)\s*(?i:(function|subroutine|module|type))\b\s+([A-Za-z_][A-Za-z0-9_]*)\s*(?:(\()([^)]*)?  (\))?)?)</string>
+			<string>(?x:\s*([a-zA-Z\(\)]*)(?&lt;!end)\s*(?i:(function|subroutine|module|type|interface))\b\s+([A-Za-z_][A-Za-z0-9_]*)\s*(?:(\()([^)]*)?  (\))?)?)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -80,7 +80,7 @@
 			<key>comment</key>
 			<string>First line of function/subroutine definition</string>
 			<key>end</key>
-			<string>(?x:((?i:end))($|\s*(?i:function|subroutine|module|type)(\s+[A-Za-z_][A-Za-z0-9_]*)?))</string>
+			<string>(?x:((?i:end))($|\s*(?i:function|subroutine|module|type|interface)(\s+[A-Za-z_][A-Za-z0-9_]*)?))</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -133,7 +133,7 @@
 			<key>comment</key>
 			<string>statements controling the flow of the program</string>
 			<key>match</key>
-			<string>\b(?i:(go\s*to|assign|to|if|then|else|elseif|elif|select\s*case|case|end\s*select|end\s*if|continue|stop|pause|do|end\s*do|while|cycle|use|allocate|sin|cos|exp|write|dot_product|maxval|minval|sum|all|any|abs|print))\b</string>
+			<string>\b(?i:(go\s*to|assign|to|if|then|else|elseif|elif|select\s*case|case|end\s*select|end\s*if|continue|stop|pause|do|end\s*do|while|cycle|use|allocate|sin|cos|exp|write|dot_product|maxval|minval|sum|all|any|abs|print|deallocate|present|size|sqrt|log|cmplx|ubound|lbound|exit|conjg|transpose|matmul|aimag|read|trim))\b</string>
 			<key>name</key>
 			<string>keyword.control.fortran</string>
 		</dict>
@@ -181,7 +181,7 @@
 			<key>comment</key>
 			<string>data type attributes</string>
 			<key>match</key>
-			<string>\b(?i:(allocatable|pointer|dimension|common|equivalence|parameter|external|intrinsic|save|data|implicit\s*none|implicit|intent|in|out|inout))\b</string>
+			<string>\b(?i:(allocatable|pointer|dimension|common|equivalence|parameter|external|intrinsic|save|data|implicit\s*none|implicit|intent|in|out|inout|optional))\b</string>
 			<key>name</key>
 			<string>storage.modifier.fortran</string>
 		</dict>
