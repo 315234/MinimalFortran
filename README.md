@@ -1,11 +1,7 @@
-MinimalFortran
-==============
+MinimalFortran (DEPRECATED)
+===========================
 
-Minimal symbol and syntax matching for Fortran in Sublime Text
-
-Pull requests are welcome :)
-
-I am no longer maintaining this syntax highlighting package, it has been superseded by my new package:
+This package is no longer maintained, and will be removed in future. It has been superseded by my new package:
 
 https://github.com/315234/SublimeFortran
 
